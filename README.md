@@ -1,3 +1,10 @@
+# Make TIL repository
+## 20190219
+### Learned 
+* make repository at github
+* setting github pages and change jekyll theme
+* commit message using browser
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/nzel0121/TIL/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
