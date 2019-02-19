@@ -1,9 +1,10 @@
 # Make TIL repository
 ## 20190219
-### Learned 
+### Learning 
 * make repository at github
 * setting github pages and change jekyll theme
-* commit message using browser
+* commit comments using browser
+* write comments and reply
 
 ## Welcome to GitHub Pages
 
