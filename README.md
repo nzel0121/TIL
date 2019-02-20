@@ -1,6 +1,7 @@
 # Make TIL repository
 ## 20190220
 git command clone, update commit, push
+prepare git pull origin master
 
 ## 20190219
 ### Learning 
