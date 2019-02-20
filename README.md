@@ -2,6 +2,7 @@
 ## 20190220
 git command clone, update commit, push
 prepare git pull origin master
+re git add , commit , push
 
 ## 20190219
 ### Learning 
