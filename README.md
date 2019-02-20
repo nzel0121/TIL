@@ -1,4 +1,7 @@
 # Make TIL repository
+## 20190220
+git command clone, update commit, push
+
 ## 20190219
 ### Learning 
 * make repository at github
