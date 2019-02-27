@@ -33,7 +33,7 @@ ADD dependency
     <artifactId>JUnitParams</artifactId>
     <version>1.1.1</version>
     <scope>test</scope>
-</dependency>
+</dependency>g
 ```
 Sample Code
 ```java
@@ -56,3 +56,33 @@ private Object[] parametersForTestOffline(){
 }
 ```
 > parameters 를 사용할 때는 스트링 배열로 사용해도 되나. Type safe 하게 메소드를 이용할 수 있음 메소드를 사용하는 규약은 **parametersFor**메소드명 으로 할 수 있다.
+
+## Spring HATEOAS introduce
+* make Link
+    * with String
+    * with controller and method
+* make resource
+    * resource is data + link
+* search link
+    * Traverson
+    * LinkDiscoverers
+* Link is
+    * HREF ( hypermedia reference )
+    * REL ( relation )
+        * self
+        * profile
+        * ...
+
+## Spring HATEOAS 적용
+### TEST CODE 변경
+1. _link..self 가 넘어오는지 확인
+2. _link.query-events - 이벤트목록을 가져오는 링크
+3. _link.update-event - 이벤트를 변경하는 링크
+
+
+## Spring REST Doc 소개
+Spring Boot 에서는 @Annotation 으로 추가가능 
+> @AutoConfigureRestDocs
+
+### 추가방법
+andDo(document("",links()))
