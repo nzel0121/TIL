@@ -84,5 +84,47 @@ private Object[] parametersForTestOffline(){
 Spring Boot 에서는 @Annotation 으로 추가가능 
 > @AutoConfigureRestDocs
 
-### 추가방법
-andDo(document("",links()))
+### Rest Docs 코딩
+* andDo(document("",links())) <-- 같은형태로..
+* snippets
+    * links()
+    * requestParameters() + parameterWithName()
+    * pathParameters() + parametersWithName()
+    * requestParts() + pathWithName()
+    * requestFelds() + fieldWithPath()
+    * responseField()
+    * ...
+
+### 문서생성
+* mvn package
+    * test
+    * prepare-package :: process-asciidoc
+    * prepare-package :: copy-resources
+* 문서확인
+    * /docs/index.html
+
+### Constraint
+
+### RestDocMocMvc 커스터마이징
+* RestDocsMockMvcConfigurationCustomizer 를 구현해서 빈등록
+* @TestConfiguration
+
+### TEST TODO
+* API 문서만들기
+    * 요청문서화
+    * 응답문서화
+    * 링크문서화
+    * profile 링크 추가
+
+### postgres 
+docker pull postgres
+docker run --name rest -p 5432:5432 -e POSTGRES_PASSWORD=pass -d postres
+docker exec -i -t rest bash
+su - postgres
+psql -d postgres -U postgres
+psql -d postgres -U postgres -W
+Password :
+database 찾는명령 \l
+
+docker exec -i -t rest bash
+
