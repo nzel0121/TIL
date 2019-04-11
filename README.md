@@ -1,3 +1,7 @@
+TIL 로 자료정리하면서 절때 하지말것. 
+* 정리하지 말 것 ( 남이 해둔것을 옮겨서 차근차근 정리 하는 행위 )
+    * 공부할 것 공부한 것을 뭔가를 안보고 슥슥 설명할 정도가 되면 지식으로 남았다고 봐도 될 것 같다.
+    
 # Make TIL repository
 ## 20190220
 git command clone, update commit, push
