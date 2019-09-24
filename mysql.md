@@ -47,3 +47,30 @@ show variables like "%character%";show variables like "%collation%";
 | collation_server | utf8_unicode_ci |
 +----------------------+-----------------+
 ```
+
+### mysql with docker 
+```
+docker run -v /d/docker_share/mysql:/home/mysql -d -e MYSQL_ROOT_PASSWORD=1234 -p 3306:3306 --name mysql_test mysql
+docker exec -i -t mysql_test /bin/bash
+```
+
+### Mysqldump
+```
+mysqldump -uroot -p --port 3306 -t [db명]]  > c:\folder\file.sql
+```
+
+오류패스  
+```
+mysql -uroot  p --database [db명] -f < c:\folder\file.sql
+```
+
+정상
+```
+mysql -uroot -p --database [db명] < file.sql
+```
+
+## 비밀번호 변경
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234'
+flush privileges;
+```
